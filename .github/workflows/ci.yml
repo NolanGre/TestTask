@@ -16,11 +16,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Setup JDK 17
+    - name: Setup JDK 21
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
-        distribution: 'temurin' # Или 'zulu', если используется другая дистрибуция JDK.
+        java-version: '21'
+        distribution: 'temurin'
 
     - name: Cache Maven dependencies
       uses: actions/cache@v3
